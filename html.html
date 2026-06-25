@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anish Rana Magar — CS Portfolio</title>
+  <link rel="preconnect" href="https://me.developers.google.com/u/103720376579369186113" />
+  <link rel="preconnect" href="https://me.developers.google.com/u/103720376579369186113" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="nav" id="nav">
+    <span class="nav-logo">AM</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="toggleMenu()">☰</button>
+  </nav>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#skills" onclick="toggleMenu()">Skills</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#cv" onclick="toggleMenu()">CV</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <header class="hero" id="home">
+    <div class="hero-terminal" aria-hidden="true">
+      <div class="terminal-bar">
+        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+        <span class="terminal-title">anish@portfolio ~ $</span>
+      </div>
+      <div class="terminal-body">
+        <p><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+        <p class="out">Anish Rana Magar</p>
+        <p><span class="prompt">$</span> <span class="cmd">cat role.txt</span></p>
+        <p class="out">Working Student — Computer Science</p>
+        <p><span class="prompt">$</span> <span class="cmd">ls skills/</span></p>
+        <p class="out">Python &nbsp;Java &nbsp;Linux &nbsp;Git &nbsp;LaTeX &nbsp;SQL</p>
+        <p><span class="prompt">$</span> <span class="cursor">▋</span></p>
+      </div>
+    </div>
+    <div class="hero-text">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1>Anish Rana Magar</h1>
+      <p class="hero-sub">Computer Science student at Gisma University of Applied Sciences,<br/>
+      building reliable, well-documented software.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="cv/cv.pdf" class="btn btn-ghost" target="_blank">Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── ABOUT ── -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-label">01 · About</p>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>Who I am</h2>
+          <p>I am a Computer Science student at Gisma University of Applied Sciences in Berlin,
+          currently seeking a working student position where I can apply my academic knowledge
+          to real-world engineering challenges.</p>
+          <p>My coursework spans algorithms and data structures, object-oriented programming,
+          database systems, and software engineering principles. I am especially drawn to
+          back-end development and scripting — making systems that work quietly and correctly.</p>
+          <p>Outside of lectures I maintain personal coding projects, contribute to open-source
+          repositories, and document everything obsessively — because readable code is good code.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Years of programming</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Completed projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Languages spoken</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Documented commits</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <p class="section-label">02 · Skills</p>
+      <h2>Technical Toolkit</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul class="skill-list">
+            <li><span class="skill-bar" style="--pct:80%"></span><span>Python</span><span class="skill-pct">80%</span></li>
+            <li><span class="skill-bar" style="--pct:70%"></span><span>Java</span><span class="skill-pct">70%</span></li>
+            <li><span class="skill-bar" style="--pct:55%"></span><span>C</span><span class="skill-pct">55%</span></li>
+            <li><span class="skill-bar" style="--pct:50%"></span><span>HTML / CSS</span><span class="skill-pct">50%</span></li>
+            <li><span class="skill-bar" style="--pct:40%"></span><span>SQL</span><span class="skill-pct">40%</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3>Tools & Platforms</h3>
+          <div class="tag-cloud">
+            <span class="tag">Git &amp; GitHub</span>
+            <span class="tag">Linux / Bash</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">LaTeX / Overleaf</span>
+            <span class="tag">GitHub Pages</span>
+            <span class="tag">Jupyter Notebook</span>
+            <span class="tag">IntelliJ IDEA</span>
+            <span class="tag">Docker (basics)</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>CS Concepts</h3>
+          <div class="tag-cloud">
+            <span class="tag">Data Structures</span>
+            <span class="tag">Algorithms</span>
+            <span class="tag">OOP</span>
+            <span class="tag">Software Engineering</span>
+            <span class="tag">Database Design</span>
+            <span class="tag">Version Control</span>
+            <span class="tag">Unit Testing</span>
+            <span class="tag">REST APIs</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-label">03 · Projects</p>
+      <h2>Selected Work</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-lang python">Python</span>
+            <div class="project-links">
+              <a href="projects/data-analysis/" aria-label="View project">↗</a>
+            </div>
+          </div>
+          <h3>Student Grade Analyser</h3>
+          <p>A Python script that reads a CSV of student scores, computes descriptive statistics,
+          and plots grade distributions using Matplotlib. Demonstrates file I/O, pandas, and
+          clean function design with full docstrings.</p>
+          <div class="project-footer">
+            <span class="tag sm">pandas</span>
+            <span class="tag sm">matplotlib</span>
+            <span class="tag sm">CSV</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-lang java">Java</span>
+            <div class="project-links">
+              <a href="projects/library-system/" aria-label="View project">↗</a>
+            </div>
+          </div>
+          <h3>Library Management System</h3>
+          <p>A console-based Java application implementing a library catalogue with OOP principles:
+          inheritance, interfaces, and encapsulation. Includes a custom linked-list implementation
+          and JUnit test suite.</p>
+          <div class="project-footer">
+            <span class="tag sm">OOP</span>
+            <span class="tag sm">JUnit</span>
+            <span class="tag sm">LinkedList</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-lang sql">SQL</span>
+            <div class="project-links">
+              <a href="projects/db-design/" aria-label="View project">↗</a>
+            </div>
+          </div>
+          <h3>University Database Schema</h3>
+          <p>A relational database design for a fictional university, including ER diagram,
+          normalised schema (3NF), and a set of SQL queries covering joins, aggregation,
+          and subqueries. Documented with inline comments.</p>
+          <div class="project-footer">
+            <span class="tag sm">PostgreSQL</span>
+            <span class="tag sm">ER Diagram</span>
+            <span class="tag sm">3NF</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CV ── -->
+  <section class="section section-accent" id="cv">
+    <div class="container cv-section">
+      <div class="cv-text">
+        <p class="section-label light">04 · CV</p>
+        <h2>Curriculum Vitae</h2>
+        <p>My full CV is available as a PDF, typeset in LaTeX. It covers my education,
+        technical skills, project experience, and language proficiencies.</p>
+        <a href="cv/cv.pdf" class="btn btn-white" target="_blank">Download CV (PDF)</a>
+      </div>
+      <div class="cv-preview" aria-hidden="true">
+        <div class="cv-card">
+          <div class="cv-line w80"></div>
+          <div class="cv-line w50 bold"></div>
+          <div class="cv-spacer"></div>
+          <div class="cv-line w90"></div>
+          <div class="cv-line w70"></div>
+          <div class="cv-line w60"></div>
+          <div class="cv-spacer"></div>
+          <div class="cv-line w80"></div>
+          <div class="cv-line w55 bold"></div>
+          <div class="cv-line w75"></div>
+          <div class="cv-line w65"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="section" id="contact">
+    <div class="container contact-section">
+      <p class="section-label">05 · Contact</p>
+      <h2>Get in touch</h2>
+      <p class="contact-sub">I am currently looking for a working student position in software
+      development. If you would like to discuss an opportunity, feel free to reach out.</p>
+      <div class="contact-links">
+        <a href="mailto:ar8744477@gmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          <span>ar8744477@gmail.com</span>
+        </a>
+        <a href="https://github.com/anishranamagar/protfolio.git" class="contact-item" target="_blank">
+          <span class="contact-icon">⌥</span>
+          <span>github.com/anishranamagar</span>
+        </a>
+        <a href="https://linkedin.com/in/anish-rana-b98945350" class="contact-item" target="_blank">
+          <span class="contact-icon">in</span>
+          <span>linkedin.com/in/anish-rana-b98945350</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 Anish Rana Magar</span>
+      <span>Built with HTML · CSS · GitHub Pages</span>
+      <a href="https://github.com/anishranamagar/protfolio" target="_blank">Source on GitHub ↗</a>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky nav shadow
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Mobile menu
+    function toggleMenu() {
+      document.getElementById('navMobile').classList.toggle('open');
+    }
+
+    // Scroll-reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.section, .project-card, .stat-card').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

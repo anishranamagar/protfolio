@@ -1,0 +1,142 @@
+% ─────────────────────────────────────────────────────────────
+%  Curriculum Vitae — Anish Rana Magar
+%  Compile with: pdflatex cv.tex   (or use Overleaf)
+% ─────────────────────────────────────────────────────────────
+\documentclass[11pt, a4paper]{article}
+
+% ── Packages ──────────────────────────────────────────────────
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=2.2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{fontawesome5}   % icons (optional, remove if not installed)
+
+% ── Colours ───────────────────────────────────────────────────
+\definecolor{accent}{HTML}{006E50}
+\definecolor{muted} {HTML}{555555}
+\definecolor{rule}  {HTML}{DDDDDD}
+
+% ── Hyperlinks ────────────────────────────────────────────────
+\hypersetup{
+  colorlinks = true,
+  urlcolor   = accent,
+  linkcolor  = accent
+}
+
+% ── Section style ─────────────────────────────────────────────
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}
+  {0em}
+  {}
+  [\vspace{2pt}\textcolor{rule}{\hrule}\vspace{4pt}]
+
+\titlespacing{\section}{0pt}{14pt}{6pt}
+
+% ── Helpers ───────────────────────────────────────────────────
+\newcommand{\cventry}[4]{%
+  \textbf{#1} \hfill \textcolor{muted}{\small #2}\\
+  \textit{\small #3} \hfill \textcolor{muted}{\small #4}\\
+}
+
+\newcommand{\cvproject}[3]{%
+  \textbf{#1} \hfill \textcolor{muted}{\small #2}\\
+  {\small #3}\\[4pt]
+}
+
+% ── No page numbers ───────────────────────────────────────────
+\pagestyle{empty}
+
+% ─────────────────────────────────────────────────────────────
+\begin{document}
+
+% ── Header ────────────────────────────────────────────────────
+\begin{center}
+  {\Huge\bfseries Anish Rana Magar}\\[6pt]
+  {\color{muted}\small
+    Berlin, Germany \quad|\quad
+    \href{mailto:ar8744477@gmail.com}{ar8744477@gmail.com} \quad|\quad
+    \href{https://github.com/anishranamagar}{github.com/anishranamagar} \quad|\quad
+    \href{https://anishranamagar.github.io}{anishranamagar.github.io}
+  }
+\end{center}
+
+\vspace{6pt}
+
+% ── Education ─────────────────────────────────────────────────
+\section{Education}
+
+\cventry{B.Sc. Computer Science}{Oct 2022 -- Present}
+        {Gisma University of Applied Sciences}{Berlin, Germany}
+\begin{itemize}[leftmargin=1.2em, itemsep=1pt, topsep=2pt]
+  \item Relevant modules: Algorithms \& Data Structures, Design Patterns
+\end{itemize}
+
+\begin{itemize}[leftmargin=1.2em, itemsep=1pt, topsep=2pt]
+  \item Focus subjects: Mathematics, Computer Science, English
+\end{itemize}
+
+% ── Technical Skills ──────────────────────────────────────────
+\section{Technical Skills}
+
+\begin{tabularx}{\linewidth}{@{} l X}
+  \textbf{Languages}   & Python, Java, C, SQL, HTML/CSS \\[2pt]
+  \textbf{Tools}       & Git \& GitHub, Linux/Bash, VS Code, IntelliJ IDEA,
+                          \LaTeX{}/Overleaf, Jupyter Notebook, Docker (basics) \\[2pt]
+  \textbf{Concepts}    & Data structures, OOP, software engineering principles,
+                         relational databases, unit testing, REST APIs, version control \\[2pt]
+  \textbf{Languages}   & German (A2), English (C1), Nepali (Native) \\
+\end{tabularx}
+
+% ── Projects ──────────────────────────────────────────────────
+\section{Selected Projects}
+
+\cvproject{Student Grade Analyser}{Python · pandas · Matplotlib}
+{%
+  A command-line tool that reads student scores from a CSV file, computes
+  descriptive statistics (mean, median, standard deviation), and generates
+  grade-distribution histograms. Demonstrates clean function design, file
+  I/O, and data visualisation. Source available on GitHub.
+}
+
+\cvproject{Library Management System}{Java · OOP · JUnit}
+{%
+  A console-based application implementing a library catalogue using OOP
+  principles: inheritance, interfaces, and encapsulation. Features a custom
+  singly-linked-list implementation and a JUnit~5 test suite covering
+  edge cases. Achieved 90\% code coverage.
+}
+
+\cvproject{University Database Schema}{SQL · PostgreSQL · ER Design}
+{%
+  Full relational database design for a fictional university system, including
+  entity-relationship diagram, 3NF-normalised schema, and a set of SQL queries
+  covering multi-table joins, aggregation, and correlated subqueries.
+  Fully documented with inline comments.
+}
+
+% ── Work Experience ───────────────────────────────────────────
+\section{Work Experience}
+
+\cventry{IT Support Assistant (part-time)}{Apr 2023 -- Sep 2023}
+        {TechHilfe GmbH}{Berlin, Germany}
+\begin{itemize}[leftmargin=1.2em, itemsep=1pt, topsep=2pt]
+  \item Provided first-level support for hardware and software issues
+  \item Maintained internal documentation and knowledge-base articles
+  \item Set up workstations and managed user accounts in Active Directory
+\end{itemize}
+
+Open-source contribution \quad|\quad
+Technical writing \quad|\quad
+Linux system administration \quad|\quad
+Competitive programming (Codeforces) \quad|\quad
+Chess
+
+\end{document}
