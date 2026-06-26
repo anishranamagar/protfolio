@@ -1,4 +1,4 @@
-# Alex Müller — Computer Science Portfolio
+# Anish Rana Magar — Computer Science Portfolio
 
 > Live site: **[git@github.com:anishranamagar/protfolio.git](https://github.com/anishranamagar/protfolio.git)**
 
